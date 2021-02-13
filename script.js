@@ -35,14 +35,65 @@ $(document).ready(function(){
     $("#16 .description").val(localStorage.getItem("16"));
     $("#17 .description").val(localStorage.getItem("17"));
     
-    function colorAssign() {
-        switch (currentTime) {
-            case currentTime < 9:
-                $("textarea").addClass("future")
-        }
-    }
-    colorAssign();
-
+   function colorAssign() {
+       if (currentTime > 9) {
+        $("#color9").addClass("past")
+       } else if (currentTime >= 9 && currentTime < 10) {
+        $("#color9").addClass("present")
+       } else if (currentTime < 9) {
+        $("#color9").addClass("future")
+       }
+       if (currentTime > 10) {
+        $("#color10").addClass("past")
+       } else if (currentTime >= 10 && currentTime < 11) {
+        $("#color10").addClass("present")
+       } else if (currentTime < 10) {
+        $("#color10").addClass("future")
+       }
+       if (currentTime > 9) {
+        $("#color9").addClass("past")
+       } else if (currentTime >= 9 && currentTime < 10) {
+        $("#color9").addClass("present")
+       } else if (currentTime < 9) {
+        $("#color9").addClass("future")
+       }
+       if (currentTime > 9) {
+        $("#color9").addClass("past")
+       } else if (currentTime >= 9 && currentTime < 10) {
+        $("#color9").addClass("present")
+       } else if (currentTime < 9) {
+        $("#color9").addClass("future")
+       }
+       if (currentTime > 9) {
+        $("#color9").addClass("past")
+       } else if (currentTime >= 9 && currentTime < 10) {
+        $("#color9").addClass("present")
+       } else if (currentTime < 9) {
+        $("#color9").addClass("future")
+       }
+       if (currentTime > 9) {
+        $("#color9").addClass("past")
+       } else if (currentTime >= 9 && currentTime < 10) {
+        $("#color9").addClass("present")
+       } else if (currentTime < 9) {
+        $("#color9").addClass("future")
+       }
+       if (currentTime > 9) {
+        $("#color9").addClass("past")
+       } else if (currentTime >= 9 && currentTime < 10) {
+        $("#color9").addClass("present")
+       } else if (currentTime < 9) {
+        $("#color9").addClass("future")
+       }
+       if (currentTime > 9) {
+        $("#color9").addClass("past")
+       } else if (currentTime >= 9 && currentTime < 10) {
+        $("#color9").addClass("present")
+       } else if (currentTime < 9) {
+        $("#color9").addClass("future")
+       }
+   }
+   colorAssign();
 // function colorAssign() {
     //     switch (id = currentTime) {
        //         case ""
