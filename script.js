@@ -2,15 +2,9 @@
 let now = moment().format("h a , dddd , MMMM Do YYYY");
 $("#currentDay").html(now);
 console.log(now);
-//cleaned this up. Leaving green text as a reminder if this ends up breaking code later.
-// $(document).ready(function() {    
-    // function trackTime() {
+
 let currentTime = moment().hour();
 console.log(currentTime)
-//     }
-//     trackTime();
-// });
-
 
 
 
@@ -50,47 +44,54 @@ $(document).ready(function(){
        } else if (currentTime < 10) {
         $("#color10").addClass("future")
        }
-       if (currentTime > 9) {
-        $("#color9").addClass("past")
-       } else if (currentTime >= 9 && currentTime < 10) {
-        $("#color9").addClass("present")
-       } else if (currentTime < 9) {
-        $("#color9").addClass("future")
+       if (currentTime > 11) {
+        $("#color11").addClass("past")
+       } else if (currentTime >= 11 && currentTime < 12) {
+        $("#color11").addClass("present")
+       } else if (currentTime < 11) {
+        $("#color11").addClass("future")
        }
-       if (currentTime > 9) {
-        $("#color9").addClass("past")
-       } else if (currentTime >= 9 && currentTime < 10) {
-        $("#color9").addClass("present")
-       } else if (currentTime < 9) {
-        $("#color9").addClass("future")
+       if (currentTime > 12) {
+        $("#color12").addClass("past")
+       } else if (currentTime >= 12 && currentTime < 13) {
+        $("#color12").addClass("present")
+       } else if (currentTime < 12) {
+        $("#color12").addClass("future")
        }
-       if (currentTime > 9) {
-        $("#color9").addClass("past")
-       } else if (currentTime >= 9 && currentTime < 10) {
-        $("#color9").addClass("present")
-       } else if (currentTime < 9) {
-        $("#color9").addClass("future")
+       if (currentTime > 13) {
+        $("#color13").addClass("past")
+       } else if (currentTime >= 13 && currentTime < 14) {
+        $("#color13").addClass("present")
+       } else if (currentTime < 13) {
+        $("#color13").addClass("future")
        }
-       if (currentTime > 9) {
-        $("#color9").addClass("past")
-       } else if (currentTime >= 9 && currentTime < 10) {
-        $("#color9").addClass("present")
-       } else if (currentTime < 9) {
-        $("#color9").addClass("future")
+       if (currentTime > 14) {
+        $("#color14").addClass("past")
+       } else if (currentTime >= 14 && currentTime < 15) {
+        $("#color14").addClass("present")
+       } else if (currentTime < 14) {
+        $("#color14").addClass("future")
        }
-       if (currentTime > 9) {
-        $("#color9").addClass("past")
-       } else if (currentTime >= 9 && currentTime < 10) {
-        $("#color9").addClass("present")
-       } else if (currentTime < 9) {
-        $("#color9").addClass("future")
+       if (currentTime > 15) {
+        $("#color15").addClass("past")
+       } else if (currentTime >= 15 && currentTime < 16) {
+        $("#color15").addClass("present")
+       } else if (currentTime < 15) {
+        $("#color15").addClass("future")
        }
-       if (currentTime > 9) {
-        $("#color9").addClass("past")
-       } else if (currentTime >= 9 && currentTime < 10) {
-        $("#color9").addClass("present")
-       } else if (currentTime < 9) {
-        $("#color9").addClass("future")
+       if (currentTime > 16) {
+        $("#color16").addClass("past")
+       } else if (currentTime >= 16 && currentTime < 17) {
+        $("#color16").addClass("present")
+       } else if (currentTime < 16) {
+        $("#color16").addClass("future")
+       }
+       if (currentTime > 17) {
+        $("#color17").addClass("past")
+       } else if (currentTime >= 17 && currentTime < 18) {
+        $("#color17").addClass("present")
+       } else if (currentTime < 17) {
+        $("#color17").addClass("future")
        }
    }
    colorAssign();
