@@ -16,20 +16,13 @@ console.log(currentTime)
 
 $(document).ready(function(){
     $(".saveBtn").click(function(){
-        let timeVal = $(this).parent().attr("id");
-        let textVal = $(this).siblings().children(".description").val();
+        const timeVal = $(this).parent().attr("id");
+        const textVal = $(this).siblings().children(".description").val();
         console.log(timeVal)
         console.log(textVal)
         
         localStorage.setItem(timeVal, textVal)
-        // if (timeVal = 9){
-            //     console.log("trigger working!")
-            //     const changeTasks = textVal
-            //     JSON.parse(localStorage.getItem("tasks"))
-            //     // localStorage.setItem("tasks", JSON.stringify(localStorageTasks))
-            // }
-            
-            
+        
         });
     });
     $("#9 .description").val(localStorage.getItem("9"));
@@ -42,7 +35,13 @@ $(document).ready(function(){
     $("#16 .description").val(localStorage.getItem("16"));
     $("#17 .description").val(localStorage.getItem("17"));
     
-    
+    function colorAssign() {
+        switch (currentTime) {
+            case currentTime < 9:
+                $("textarea").addClass("future")
+        }
+    }
+    colorAssign();
 
 // function colorAssign() {
     //     switch (id = currentTime) {
@@ -68,3 +67,11 @@ $(document).ready(function(){
 //     console.log(getTasks)
 // };
 // localStorageGet();
+// if (timeVal = 9){
+            //     console.log("trigger working!")
+            //     const changeTasks = textVal
+            //     JSON.parse(localStorage.getItem("tasks"))
+            //     // localStorage.setItem("tasks", JSON.stringify(localStorageTasks))
+            // }
+            
+            
