@@ -12,4 +12,4 @@ Project can be found at https://rstadev.github.io/Homework5-WorkdaySched/.
 
 
 Demo
-![demoGif]()
+![demoGif](https://raw.githubusercontent.com/rstadev/Homework5-WorkdaySched/main/WorkDaySchedDemo.gif)
